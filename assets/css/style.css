@@ -22,6 +22,11 @@
     --font-size-72: 72px;
     --font-size-80: 80px;
     --font-size-157: 157px;
+    --font-size-97: 97px;
+    --font-size-70: 70px;
+    --font-size-57: 57px;
+    --font-size-56: 56px;
+    --font-size-32: 32px;
     /* --color-- */
     --color-brown: #70675f;
     --color-black: #000000;
@@ -203,7 +208,7 @@
     background-size: cover;
     position: fixed;
     z-index: 8;
-    transition: all 0.3s ease-in-out;
+    transition: all 300ms linear;
 
     ul {
         flex-direction: column;
@@ -218,10 +223,10 @@
 
 .navbar-iteams {
     font-family: "Noto Serif", serif;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: 400;
     line-height: 21.79px;
-    color: #000000;
+    color: var(--color-black);
     white-space: nowrap;
     text-transform: uppercase;
     position: relative;
@@ -242,6 +247,24 @@
     width: 100%;
     left: 0%;
     right: auto;
+}
+
+/* section-3 */
+.section3-hustlin-hardos {
+    font-family: "ModernoFBComp", sans-serif;
+    font-size: var(--font-size-157);
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 188.4px;
+}
+
+.breaking-news {
+    font-family: "Noto Serif", sans-serif;
+    font-size: var(--font-size-72);
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 100.8px;
+    text-align: left;
 }
 
 @media (min-width:992px) {
@@ -279,6 +302,8 @@
 
 
 
+
+
 }
 
 @media (max-width:992px) {
@@ -292,6 +317,33 @@
         left: 40%;
         top: 1%;
 
+    }
+
+    .section3-hustlin-hardos {
+        font-size: var(--font-size-97) !important;
+    }
+}
+
+@media (max-width:768px) {
+    .section3-hustlin-hardos {
+        font-size: var(--font-size-70) !important;
+    }
+
+    .breaking-news {
+        font-size: var(--font-size-56) !important;
+    }
+
+}
+
+@media (max-width:567px) {
+    .section3-hustlin-hardos {
+        font-size: var(--font-size-57) !important;
+        line-height: 60.4px !important;
+    }
+
+    .breaking-news {
+        font-size: var(--font-size-32) !important;
+        line-height: 54.8px !important;
     }
 
 }
