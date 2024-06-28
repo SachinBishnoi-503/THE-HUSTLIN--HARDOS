@@ -30,6 +30,7 @@
     --font-size-50: 50px;
     --font-size-35: 35px;
     --font-size-29: 29px;
+    --font-size-27: 27px;
     /* --color-- */
     --color-brown: #70675f;
     --color-black: #000000;
@@ -206,10 +207,8 @@
     height: 100vh;
     top: 0%;
     right: -100%;
-    background-image: linear-gradient(to top, #000000, #0066AD);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: fixed;
+    background: var(--color-slati);
     z-index: 8;
     transition: all 300ms linear;
 
@@ -781,6 +780,26 @@
 
     .accordian-heading {
         font-size: var(--font-size-16);
+    }
+
+    .etiam-slider {
+        font-size: var(--font-size-18) !important;
+    }
+
+    .Roadmap-section9 {
+        font-size: var(--font-size-57);
+    }
+
+    .timeline-heading {
+        font-size: var(--font-size-18) !important;
+    }
+
+    .slider2-heading {
+        font-size: var(--font-size-27) !important;
+    }
+
+    .slider2-heading2 {
+        font-size: var(--font-size-27);
     }
 }
 
