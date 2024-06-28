@@ -431,6 +431,136 @@
     margin-top: 24px;
 }
 
+/* section-9 */
+.Roadmap-section9 {
+    font-family: "Noto Serif", sans-serif;
+    font-size: var(--font-size-80);
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 83.2px;
+    text-align: left;
+}
+
+/* section-10 */
+/* ------timeline------- */
+.py-88 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.timeline-parent-box {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 200px;
+}
+
+.timeline-parent-box::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--color-black);
+    top: 95px;
+    bottom: 70px;
+    left: 30px;
+    margin-left: -3px;
+}
+
+.right-box {
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+
+.right-box::after {
+    content: "";
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    background-image: url(../images/svg/time-line-svg.svg);
+    border-radius: 50%;
+    top: 14px;
+    left: 1px;
+    z-index: 1;
+}
+
+.left-box {
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+
+.left-box::after {
+    content: "";
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    background-image: url(../images/svg/time-line-svg.svg);
+    border-radius: 50%;
+    top: 6px;
+    left: 1px;
+    z-index: 1;
+}
+
+.left-box {
+    padding: 10px 0px 10px 70px;
+
+}
+
+.right-box {
+    padding: 10px 0px 10px 70px;
+
+}
+
+.right-box .timeline-paragraph {
+    max-width: 495px;
+}
+
+.left-box.timeline-paragraph {
+    max-width: 460px;
+}
+
+.left-box.timeline-heading {
+    max-width: 460px;
+}
+
+.max-w-495 {
+    max-width: 495px;
+}
+
+.timeline-paragraph {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--font-size-16);
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+}
+
+.phase-timeline {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--font-size-14);
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 19.07px;
+}
+
+.timeline-heading {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--font-size-36);
+    color: var(--color-black);
+    font-weight: 600;
+    line-height: 39.85px;
+    text-align: left;
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 13px;
+    bottom: 56px;
+}
+
 @media (min-width:992px) {
     .menulist {
         position: relative;
@@ -463,12 +593,8 @@
     #menuicon {
         display: none;
     }
-
-
-
-
-
 }
+
 
 @media (max-width:992px) {
     .hustlin-hardos {
@@ -529,5 +655,70 @@
     .latest-tweets {
         font-size: var(--font-size-35) !important;
     }
+
+}
+
+@media (min-width:768px) {
+    .timeline-parent-box::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: var(--color-black);
+        top: 95px;
+        bottom: 70px;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    .left-box::after {
+        content: "";
+        width: 59px;
+        height: 59px;
+        position: absolute;
+        background-image: url(../images/svg/time-line-svg.svg);
+        border-radius: 50%;
+        top: 6px;
+        right: -28px;
+        z-index: 1;
+        left: unset;
+    }
+
+    .right-box::after {
+        content: "";
+        width: 59px;
+        height: 59px;
+        position: absolute;
+        background-image: url(../images/svg/time-line-svg.svg);
+        border-radius: 50%;
+        top: 14px;
+        left: -31px;
+        z-index: 1;
+    }
+
+    .right-box {
+        position: relative;
+        width: 50%;
+        left: 50%;
+    }
+
+    .left-box {
+        position: relative;
+        width: 50%;
+        left: 0;
+    }
+
+    .left-box {
+        padding: 10px 36px 10px 10px;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        bottom: 57px;
+        transform: translateX(-57%);
+    }
+
 
 }
