@@ -33,7 +33,7 @@ $('.slider').slick({
     ]
 });
 
-$('.slider1').slick({
+$('.slider2').slick({
     dots: false,
     infinite: true,
     prevArrow: ".prev1",
@@ -52,4 +52,24 @@ $('.slider1').slick({
             }
         }
     ]
+});
+const btnsub = document.querySelector(".btn-sub");
+const btnadd = document.querySelector(".btn-add");
+const number = document.querySelector(".number");
+
+btnsub.addEventListener("click", function () {
+    number.innerHTML = +number.innerHTML - 1;
+});
+
+btnadd.addEventListener("click", function () {
+    number.innerHTML = +number.innerHTML + 1;
+});
+const accordaon = document.querySelectorAll(".accordion-heading");
+
+accordaon.forEach(acc => {
+    acc.addEventListener("click", function () {
+        const accacitve = document.querySelector(".accordion.acc-active");
+        acc.parentElement.classList.toggle("acc-active");
+        accacitve && accacitve.classList.remove("acc-active");
+    });
 });
