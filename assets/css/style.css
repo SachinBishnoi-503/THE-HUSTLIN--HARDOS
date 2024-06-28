@@ -570,6 +570,38 @@
     line-height: 83.2px;
 }
 
+/* section-12 */
+.slider2-box {
+    background-image: url(../images/png/slider2-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider2-heading {
+    font-family: "Noto Serif", sans-serif;
+    font-size: var(--font-size-36);
+    color: var(--color-brown);
+    font-weight: 900;
+    line-height: 49.03px;
+}
+
+.slider2-heading2 {
+    font-family: "Noto Serif", sans-serif;
+    font-size: var(--font-size-36);
+    color: var(--color-slati);
+    font-weight: 900;
+    line-height: 49.03px;
+}
+
+.slider2-paragraph {
+    font-family: "Noto Serif", sans-serif;
+    font-size: var(--font-size-16);
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 21.79px;
+}
+
 @media (min-width:992px) {
     .menulist {
         position: relative;
