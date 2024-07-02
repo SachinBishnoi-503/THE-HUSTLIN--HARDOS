@@ -1,9 +1,12 @@
 const menuicon = document.querySelector("#menuicon");
 const menulist = document.querySelector(".menulist");
+let body = document.body;
 
 menuicon.addEventListener("click", function () {
     menulist.classList.toggle("showlist");
-    menuicon.classList.toggle("fixed1")
+    menuicon.classList.toggle("fixed1");
+    body.classList.toggle("overflow-lg-hidden");
+
 });
 $('.slider').slick({
     dots: false,
@@ -11,7 +14,7 @@ $('.slider').slick({
     prevArrow: ".prev",
     nextArrow: ".next",
     speed: 300,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
